@@ -5,9 +5,9 @@ def bankoper(initialBal, deposit, withdraw):
     return totalBal, updateBal
 
 if __name__ == "__main__":
-    initialBal = int(input("Enter am as initial Balance"))
-    deposite = int(input("Enter amount to deposite"))
-    withdraw = int(input("Enter withdrawal amount"))
+    initialBal = int("sys.argv[1]")
+    deposite = int("sys.argv[2]")
+    withdraw = int("sys.argv[3]")
 
     totalBal, updateBal = bankoper(initialBal, deposite, withdraw)
 
