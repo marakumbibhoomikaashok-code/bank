@@ -1,16 +1,20 @@
+
+import sys
+
 def bankoper(initialBal, deposit, withdraw):
     totalBal = initialBal + deposit
     updateBal = totalBal - withdraw
 
     return totalBal, updateBal
 
+
 if __name__ == "__main__":
-    initialBal = int("sys.argv[1]")
-    deposite = int("sys.argv[2]")
-    withdraw = int("sys.argv[3]")
+    initialBal = int(sys.argv[1])
+    deposit = int(sys.argv[2])
+    withdraw = int(sys.argv[3])
 
-    totalBal, updateBal = bankoper(initialBal, deposite, withdraw)
+    totalBal, updateBal = bankoper(initialBal, deposit, withdraw)
 
-    print("Toatal Balance:", totalBal)
-    print("Update Balance:", updateBal)
+    print("Total Balance:", totalBal)
+    print("Updated Balance:", updateBal)
 
